@@ -31,6 +31,15 @@ def test_product_presence(driver):
 
     assert len(products) >= 1
 
+    # Checks presence of title and price
+    wait.until(
+        EC.presence_of_element_located((By.CLASS_NAME, "inventory_item_name"))
+    )
+
+    wait.until(
+        EC.presence_of_element_located((By.CLASS_NAME, "inventory_item_price"))
+    )
+
 
 # CHECK PRESENCE OF MAIN ELEMENTS: SIDE MENU
 def test_menu_presence(driver):
