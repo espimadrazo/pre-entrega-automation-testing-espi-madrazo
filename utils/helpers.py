@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 # Configuration for webdriver manager automated installation according to current version of browser
 def install_driver():
     service = Service(GeckoDriverManager().install())
@@ -12,6 +13,7 @@ def install_driver():
     return driver
 
 
+# LOGIN
 def login(driver, username, password):
     wait = WebDriverWait(driver, 8)
 
