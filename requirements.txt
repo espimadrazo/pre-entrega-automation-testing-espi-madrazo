@@ -1,7 +1,0 @@
-REQUIRED LIBRARIES:
-
-- pip (included in Python if downloaded from python.org)
-- pytest: pip install pytest
-- pytest-html: pip install pytest-html
-- selenium: pip install selenium
-- webdriver manager: pip install webdriver-manager (read helpers.py in utils for installation configuration)
